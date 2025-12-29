@@ -36,7 +36,7 @@ class PixifyFree < Formula
   # libvips dependency - optional if system libvips is available
   # Homebrew will install its own copy if not found
   # To use system libvips: set PKG_CONFIG_PATH and ensure vips is in PATH
-  depends_on "vips" => :recommended
+  # depends_on "vips" => :recommended
 
   def install
     # Install the binary to Homebrew's bin directory
