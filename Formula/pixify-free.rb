@@ -21,7 +21,7 @@ class PixifyFree < Formula
     on_arm do
       # ARM Linux (Raspberry Pi, etc.)
       url "https://github.com/Mahammed-Gaber/pixify/releases/download/v1.0.0/pixify-free-linux-arm64.tar.gz"
-      sha256 "REPLACE_WITH_HASH_LINUX_ARM64"
+      sha256 "80c056460480c4151fa0fde55c9adae16fb4638eae241452db99bc170add3da8"
     end
     
     on_intel do
