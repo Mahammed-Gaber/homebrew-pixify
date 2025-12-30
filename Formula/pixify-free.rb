@@ -7,7 +7,7 @@ class PixifyFree < Formula
     on_arm do
       # Apple Silicon (M1/M2/M3)
       url "https://github.com/Mahammed-Gaber/pixify/releases/download/v1.0.0/pixify-free-darwin-arm64.tar.gz"
-      sha256 "REPLACE_WITH_HASH_ARM64"
+      sha256 "078cb0db0b5e69f380098676304c938d07c68c2528c97260c36dcb412553fa9e"
     end
     
     on_intel do
@@ -18,17 +18,10 @@ class PixifyFree < Formula
   end
 
   on_linux do
-    on_arm do
-      # ARM Linux (Raspberry Pi, etc.)
-      url "https://github.com/Mahammed-Gaber/pixify/releases/download/v1.0.0/pixify-free-linux-arm64.tar.gz"
-      sha256 "80c056460480c4151fa0fde55c9adae16fb4638eae241452db99bc170add3da8"
-    end
-    
-    on_intel do
-      # x86_64 Linux
-      url "https://github.com/Mahammed-Gaber/pixify/releases/download/v1.0.0/pixify-free-linux-amd64.tar.gz"
-      sha256 "REPLACE_WITH_HASH_LINUX_AMD64"
-    end
+    # Currently only x86_64 Linux is built
+    # ARM Linux support may be added in the future
+    url "https://github.com/Mahammed-Gaber/pixify/releases/download/v1.0.0/pixify-free-linux-amd64.tar.gz"
+    sha256 "80c056460480c4151fa0fde55c9adae16fb4638eae241452db99bc170add3da8"
   end
 
   license "EULA"
