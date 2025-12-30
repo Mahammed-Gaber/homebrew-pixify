@@ -18,17 +18,10 @@ class PixifyPro < Formula
   end
 
   on_linux do
-    on_arm do
-      # ARM Linux (Raspberry Pi, etc.)
-      url "https://github.com/Mahammed-Gaber/pixify/releases/download/v1.0.0/pixify-pro-linux-arm64.tar.gz"
-      sha256 "REPLACE_WITH_HASH_LINUX_ARM64"
-    end
-    
-    on_intel do
-      # x86_64 Linux
-      url "https://github.com/Mahammed-Gaber/pixify/releases/download/v1.0.0/pixify-pro-linux-amd64.tar.gz"
-      sha256 "REPLACE_WITH_HASH_LINUX_AMD64"
-    end
+    # Currently only x86_64 Linux is built
+    # ARM Linux support may be added in the future
+    url "https://github.com/Mahammed-Gaber/pixify/releases/download/v1.0.0/pixify-pro-linux-amd64.tar.gz"
+    sha256 "REPLACE_WITH_HASH_LINUX_AMD64"
   end
 
   license "EULA"
