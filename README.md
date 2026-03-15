@@ -4,124 +4,6 @@
 
 ---
 
-<div id="arabic" dir="rtl">
-
-## العربية
-
-الـ Tap الرسمي لـ [Pixify](https://github.com/Mahammed-Gaber/pixify) — محوّل صور عالي الأداء.
-
-### الحزم المتاحة
-
-- **pixify-free**: النسخة المجانية مع الميزات الأساسية
-- **pixify-pro**: النسخة الاحترافية مع ميزات متقدمة
-
----
-
-### التثبيت
-
-#### تثبيت النسخة المجانية
-```bash
-# إضافة الـ tap (مرة واحدة فقط)
-brew tap mahammed-gaber/pixify
-
-# تثبيت pixify-free
-brew install pixify-free
-```
-
-أو في سطر واحد:
-```bash
-brew install mahammed-gaber/pixify/pixify-free
-```
-
-#### تثبيت النسخة الاحترافية
-```bash
-brew tap mahammed-gaber/pixify
-brew install pixify-pro
-```
-
-أو في سطر واحد:
-```bash
-brew install mahammed-gaber/pixify/pixify-pro
-```
-
-#### تثبيت النسختين
-```bash
-brew install mahammed-gaber/pixify/pixify-free
-brew install mahammed-gaber/pixify/pixify-pro
-```
-
----
-
-### ماذا يحدث أثناء التثبيت؟
-
-- تثبيت **libvips** تلقائياً (الاعتماد المطلوب)
-- تحميل وتثبيت البرنامج
-- الإضافة إلى PATH تلقائياً
-
----
-
-### الاستخدام
-
-**النسخة المجانية:**
-```bash
-pixify-free -i input/ -o output/
-pixify-free --help
-pixify-free --version
-```
-
-**النسخة الاحترافية:**
-```bash
-pixify-pro -i input/ -o output/
-pixify-pro --help
-pixify-pro --version
-```
-
----
-
-### التحديث
-
-```bash
-brew upgrade pixify-free
-brew upgrade pixify-pro
-# أو كلاهما
-brew upgrade pixify-free pixify-pro
-```
-
----
-
-### إلغاء التثبيت
-
-```bash
-brew uninstall pixify-free
-brew uninstall pixify-pro
-```
-
-**ملاحظة:** إلغاء التثبيت لا يزيل libvips (قد يكون مستخدماً من حزم أخرى).
-
----
-
-### التحقق من الإصدار
-
-```bash
-brew list | grep pixify
-brew info pixify-free
-brew info pixify-pro
-pixify-free --version
-pixify-pro --version
-```
-
----
-
-### روابط
-
-- [مستودع Pixify](https://github.com/Mahammed-Gaber/pixify)
-- [الإبلاغ عن مشكلة](https://github.com/Mahammed-Gaber/pixify/issues)
-- [دليل تثبيت libvips](https://github.com/Mahammed-Gaber/pixify/blob/main/docs/install-libvips.md)
-
-</div>
-
----
-
 <div id="english" dir="ltr">
 
 ## English
@@ -235,5 +117,123 @@ pixify-pro --version
 - [Pixify repository](https://github.com/Mahammed-Gaber/pixify)
 - [Report issues](https://github.com/Mahammed-Gaber/pixify/issues)
 - [Install libvips guide](https://github.com/Mahammed-Gaber/pixify/blob/main/docs/install-libvips.md)
+
+</div>
+
+---
+
+<div id="arabic" dir="rtl">
+
+## العربية
+
+الـ Tap الرسمي لـ [Pixify](https://github.com/Mahammed-Gaber/pixify) — محوّل صور عالي الأداء.
+
+### الحزم المتاحة
+
+- **pixify-free**: النسخة المجانية مع الميزات الأساسية
+- **pixify-pro**: النسخة الاحترافية مع ميزات متقدمة
+
+---
+
+### التثبيت
+
+#### تثبيت النسخة المجانية
+```bash
+# إضافة الـ tap (مرة واحدة فقط)
+brew tap mahammed-gaber/pixify
+
+# تثبيت pixify-free
+brew install pixify-free
+```
+
+أو في سطر واحد:
+```bash
+brew install mahammed-gaber/pixify/pixify-free
+```
+
+#### تثبيت النسخة الاحترافية
+```bash
+brew tap mahammed-gaber/pixify
+brew install pixify-pro
+```
+
+أو في سطر واحد:
+```bash
+brew install mahammed-gaber/pixify/pixify-pro
+```
+
+#### تثبيت النسختين
+```bash
+brew install mahammed-gaber/pixify/pixify-free
+brew install mahammed-gaber/pixify/pixify-pro
+```
+
+---
+
+### ماذا يحدث أثناء التثبيت؟
+
+- تثبيت **libvips** تلقائياً (الاعتماد المطلوب)
+- تحميل وتثبيت البرنامج
+- الإضافة إلى PATH تلقائياً
+
+---
+
+### الاستخدام
+
+**النسخة المجانية:**
+```bash
+pixify-free -i input/ -o output/
+pixify-free --help
+pixify-free --version
+```
+
+**النسخة الاحترافية:**
+```bash
+pixify-pro -i input/ -o output/
+pixify-pro --help
+pixify-pro --version
+```
+
+---
+
+### التحديث
+
+```bash
+brew upgrade pixify-free
+brew upgrade pixify-pro
+# أو كلاهما
+brew upgrade pixify-free pixify-pro
+```
+
+---
+
+### إلغاء التثبيت
+
+```bash
+brew uninstall pixify-free
+brew uninstall pixify-pro
+```
+
+**ملاحظة:** إلغاء التثبيت لا يزيل libvips (قد يكون مستخدماً من حزم أخرى).
+
+---
+
+### التحقق من الإصدار
+
+```bash
+brew list | grep pixify
+brew info pixify-free
+brew info pixify-pro
+pixify-free --version
+pixify-pro --version
+```
+
+---
+
+### روابط
+
+- [مستودع Pixify](https://github.com/Mahammed-Gaber/pixify)
+- [الإبلاغ عن مشكلة](https://github.com/Mahammed-Gaber/pixify/issues)
+- [دليل تثبيت libvips](https://github.com/Mahammed-Gaber/pixify/blob/main/docs/install-libvips.md)
 
 </div>
