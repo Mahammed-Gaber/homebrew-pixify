@@ -24,7 +24,7 @@ class PixifyPro < Formula
     sha256 "1c607ad9ce46fd1be77840e59c2efc2fa885c27b02c1da97d78a6fba823a2e0b"
   end
 
-  license "EULA"
+  license :cannot_represent
 
   # libvips dependency - optional if system libvips is available
   # Homebrew will install its own copy if not found
@@ -39,15 +39,21 @@ class PixifyPro < Formula
   def caveats
     <<~EOS
       🎉 Pixify Pro has been installed successfully!
-      
+
       Quick start:
         pixify-pro -i input/ -o output/
-      
+
       Get help:
         pixify-pro --help
-      
+
       Check version:
         pixify-pro --version
+
+      ⚠️  A valid Pro license key is required.
+      Activate at: https://getpixify.com/pricing
+
+      By installing, you agree to the Pixify EULA:
+      https://getpixify.com/eula
     EOS
   end
 

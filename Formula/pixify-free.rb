@@ -24,7 +24,7 @@ class PixifyFree < Formula
     sha256 "3c144856735e347788c9c82390f1ba53f4a84edb03ec5ba8fca7ae807b7b59a3"
   end
 
-  license "EULA"
+  license :cannot_represent
 
   # libvips dependency - optional if system libvips is available
   # Homebrew will install its own copy if not found
@@ -34,24 +34,24 @@ class PixifyFree < Formula
   def install
     # Install the binary to Homebrew's bin directory
     bin.install "pixify-free"
-    # Create symlink for convenience
-    bin.install_symlink "pixify-free" => "pixify"
   end
 
   def caveats
     <<~EOS
       🎉 Pixify Free has been installed successfully!
-      
+
       Quick start:
         pixify-free -i input/ -o output/
-        # or use the symlink:
-        pixify -i input/ -o output/
-      
+
       Get help:
         pixify-free --help
-      
+
       Check version:
         pixify-free --version
+
+      License:
+        By installing, you agree to the Pixify EULA:
+        https://getpixify.com/eula
     EOS
   end
 
