@@ -7,13 +7,13 @@ class PixifyPro < Formula
     on_arm do
       # Apple Silicon (M1/M2/M3)
       url "https://github.com/Mahammed-Gaber/pixify/releases/download/v1.0.0/pixify-pro-darwin-arm64.tar.gz"
-      sha256 "f61aa0384b129fa75c25f9b5aa00c938663332d6eaccb1fa974067f235fbea69"
+      sha256 "6b71b14ef7d0c7ed34d1bf8c51bd4881a0586636c15d2a10eeabb69384e2f143"
     end
     
     on_intel do
       # Intel Mac
       url "https://github.com/Mahammed-Gaber/pixify/releases/download/v1.0.0/pixify-pro-darwin-amd64.tar.gz"
-      sha256 "de40372e8a148eb3ee14e0d028a384cb3a4dfe563de60a5f47a42f82dede7151"
+      sha256 "2887c547d5e1734f6fde538b5c1280090ff24c9c64304385af330dc728579eda"
     end
   end
 
@@ -21,7 +21,7 @@ class PixifyPro < Formula
     # Currently only x86_64 Linux is built
     # ARM Linux support may be added in the future
     url "https://github.com/Mahammed-Gaber/pixify/releases/download/v1.0.0/pixify-pro-linux-amd64.tar.gz"
-    sha256 "1c607ad9ce46fd1be77840e59c2efc2fa885c27b02c1da97d78a6fba823a2e0b"
+    sha256 "9963ce8e9db5f6561bca64c7793632911542b7d52c1364b1506eb02d853de6bb"
   end
 
   license :cannot_represent
